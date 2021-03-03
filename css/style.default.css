@@ -476,7 +476,7 @@ header.header_bg{
 
 .parallax3 {
   /* The image used */
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/Drought\ image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/Drought.jpg");
   opacity: 0.8;
   background-position: center;
   background-repeat: no-repeat;
