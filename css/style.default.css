@@ -286,8 +286,8 @@ section {
 
   #apps .cards {
     grid-template-columns: 1fr;
-    width: 80%;
-    margin: auto;;
+    width: 60%;
+    margin: auto;
   }
   
   
