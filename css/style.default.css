@@ -31,6 +31,7 @@ body {
   font-size: 0.9rem !important;
 }
 
+
 strong {
   font-weight: 700;
 }
@@ -276,25 +277,9 @@ section {
 
 /* PERSONAL STYLING */
 
-@media (max-width: 992px) {
-  
-#about .vid-main-ctn, 
-#about .container {
-      grid-column: 1/-1;
-      gap: 20px;
-  }
-
-  #apps .cards {
-    grid-template-columns: 1fr;
-    width: 60%;
-    margin: auto;
-  }
-  
-  
-}
 
 
-
+/* other styling */
 
 .heading-text-GISE{
     font-family: 'BrandonGrotW01-Light',sans-serif;
@@ -329,7 +314,7 @@ header.header_bg{
 
 
 .banner_view{
-  min-height: 80vh;
+  min-height: 50vh;
 }
 .banner-text{
     margin: auto;
@@ -638,7 +623,11 @@ small {
 
 /* MEET THE TEAM */
 
+.meet-team{
 
+  width: 80%;
+
+}
 
 .team {
   display: grid;
@@ -657,8 +646,8 @@ small {
     font-family:"BrandonGrotW01-Light";
 }
 .our-team .pic{
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    height: 347px;
     border-radius: 50%;
     /* border: 3px solid #34e2a7; */
     margin: 0 auto;
@@ -666,9 +655,10 @@ small {
     
 
 }
+
 .our-team img{
     width: 100%;
-    height: 60vh;
+    
     object-fit: cover;
     object-position: 50% 50%;
 }
@@ -723,20 +713,7 @@ small {
     line-height: 30px;
     margin-bottom: 0;
 }
-@media only screen and (max-width: 990px){
-    .team{
-      grid-template-columns: 1fr;
-    }
 
-    .our-team{ margin-bottom: 30px; }
-}
-@media only screen and (max-width: 359px){
-    .our-team .pic{
-        width: 150px;
-        height: 150px;
-    }
-    .our-team .social{ top: 20px; }
-}
 
 
 /* Volunteer */
@@ -768,6 +745,109 @@ small {
   color: #ffffff;
   font-family: 'BrandonGrotW01-Light',sans-serif;
 }
+
+.mapathon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mpt-text{
+  align-self: center;
+  letter-spacing: normal;
+  line-height: 1.5em;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1201px){
+  .our-team .pic {
+    height: 400px;
+    }
+}
+
+@media screen and (max-width: 992px)  {
+  
+  #about .vid-main-ctn, 
+  #about .container 
+   {
+        grid-column: 1/-1;
+        gap: 20px;
+    }
+
+    #apps .cards {
+      grid-template-columns: 1fr;
+      width: 70%;
+      margin: auto;
+    } 
+
+    .mpt-img, 
+    .mpt-text {
+      grid-template-columns: 1fr;
+      grid-column: 1/-1;
+    }
+
+    .team-pres,
+    .team-cof { 
+       
+      grid-template-columns: 1fr;
+      grid-column: 1/-1;
+      font-size: 15px;
+    
+    }
+
+
+    .our-team .pic {
+      height: 408px;
+      }
+
+
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+  #apps .cards {
+   
+    width: 100%;
+  
+  }
+ 
+
+  .our-team { 
+    margin-bottom: 30px; 
+    grid-template-columns: 1fr;
+    grid-column: 1/-1;
+  
+  }
+
+  .our-team .pic{
+    
+    height: 300px;
+}
+
+
+.our-team .social{ top: 20px; } 
+
+
+.mpt-text, 
+.vln-txt p,
+.what-we-do p,
+.about-container p {
+  font-size: 1rem;
+}
+  
+}
+
+
 
 
 
