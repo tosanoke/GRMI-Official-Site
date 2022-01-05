@@ -820,6 +820,7 @@ small {
   gap: 20px;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .events-container {
