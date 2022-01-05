@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS-->
 
     
-
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!-- Google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
@@ -46,6 +46,72 @@
 
 
   <body>
+
+     <!-- modal -->
+     <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+          <div class="modal-body">
+             <!-- carousel -->
+
+            <div
+                 id='carouselExampleIndicators'
+                 class='carousel slide'
+                 data-ride='carousel'
+                 >
+                 
+              <ol class='carousel-indicators'>
+                <li
+                    data-target='#carouselExampleIndicators'
+                    data-slide-to='0'
+                    class='active'
+                    ></li>
+                <li
+                    data-target='#carouselExampleIndicators'
+                    data-slide-to='1'
+                    ></li>
+                <li
+                    data-target='#carouselExampleIndicators'
+                    data-slide-to='2'
+                    ></li>
+              </ol>
+
+              <div class='carousel-inner carousel-inner-for-script'>
+              </div>
+              
+              <a
+                 class='carousel-control-prev'
+                 href='#carouselExampleIndicators'
+                 role='button'
+                 data-slide='prev'
+                 >
+                <span class='carousel-control-prev-icon'
+                      aria-hidden='true'
+                      ></span>
+                <span class='sr-only'>Previous</span>
+              </a>
+              <a
+                 class='carousel-control-next'
+                 href='#carouselExampleIndicators'
+                 role='button'
+                 data-slide='next'
+                 >
+                <span
+                      class='carousel-control-next-icon'
+                      aria-hidden='true'
+                      ></span>
+                <span class='sr-only'>Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
         <!-- navbar and Landing page-->
         <header class="header header_bg">
           <nav class="navbar navbar-expand-lg py-lg-0">
@@ -136,18 +202,12 @@
                 <h2 class="mb-4"><span>What we do</span> </h2>
                 <hr>
                 <p class="small-text-GISE">
-                  GEO Hazard Mapping Initiative is 
+                  GEO Hazard Risk Mapping Initiative is 
                   focused on deploying volunteer youths who are skilled at using 
                   Geographic Information Systems and satellite imagery analysis to create 
-                  susceptiblility and emergency mapping of actual or expected natural, 
+                  susceptibility and emergency mapping of actual or expected natural, 
                   biological, and technological hazards being experienced in Nigeria and 
                   other African countries as a result of Climate Change.
-
-
-                  
-
-
-
                 </p>
               </div>
 
@@ -288,7 +348,6 @@
 
             </div>
 
-      
           <!-- images -->
           <div class="hidden" id="img-repo">
               
@@ -345,73 +404,7 @@
           
                
             
-        </div>
-        
-          <!-- modal -->
-          <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content ">
-                <div class="modal-body">
-                   <!-- carousel -->
-      
-                  <div
-                       id='carouselExampleIndicators'
-                       class='carousel slide'
-                       data-ride='carousel'
-                       >
-                       
-                    <ol class='carousel-indicators'>
-                      <li
-                          data-target='#carouselExampleIndicators'
-                          data-slide-to='0'
-                          class='active'
-                          ></li>
-                      <li
-                          data-target='#carouselExampleIndicators'
-                          data-slide-to='1'
-                          ></li>
-                      <li
-                          data-target='#carouselExampleIndicators'
-                          data-slide-to='2'
-                          ></li>
-                    </ol>
-      
-                    <div class='carousel-inner'>
-                    </div>
-                    
-                    <a
-                       class='carousel-control-prev'
-                       href='#carouselExampleIndicators'
-                       role='button'
-                       data-slide='prev'
-                       >
-                      <span class='carousel-control-prev-icon'
-                            aria-hidden='true'
-                            ></span>
-                      <span class='sr-only'>Previous</span>
-                    </a>
-                    <a
-                       class='carousel-control-next'
-                       href='#carouselExampleIndicators'
-                       role='button'
-                       data-slide='next'
-                       >
-                      <span
-                            class='carousel-control-next-icon'
-                            aria-hidden='true'
-                            ></span>
-                      <span class='sr-only'>Next</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
           </div>
-
-
 
           </div>
 
@@ -497,20 +490,49 @@
 
         </section>
 
-      <!-- mapathon-->
+      <!-- events-->
       <section class=" bg-color-blue">
+        <div class="AD" style="padding: 0;"><h2>Our Latest Events<hr></h2></div>
 
-      <div class="mapathon-container py-5" >
+        <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          
+          <div class="carousel-inner ">
+
+            <div class="carousel-item active">
+              <div class="events-container">
+                <div class="vid-container">
+                    <iframe width="800" height="568" src="https://www.youtube.com/embed/B6N3p3gi6ho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div> 
+            
+              </div>
+                  
+            </div>
+
+
+            <div class="carousel-item ">
+                <div class="events-container">
+                  <img src="/Images/GRMI_Event.jpeg" alt="GIS DAY" srcset="">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="mapathon-container " >
 
                 <div class="mpt-img" style="padding: 10px 0;">
                   <img src="/Images/mapathon.jpeg" alt="mapathon" style="width: 100%;">
-
+      
                 </div>
               
                 <div class="small-text-GISE mpt-text">
                 
                     <!-- <h4> MAPATHON</h4> -->
-
+      
                   <p> 
                     <br> We would be updating our latest Mapathons here
                     <br>
@@ -528,12 +550,22 @@
                   </p>
                   
                   </div>
+              </div>
+            </div>
+
+            
+          </div>
 
 
-      </div>
-      
-        
-
+          <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+              </div>
       </section>
 
 
@@ -551,7 +583,9 @@
               <div class="vln-txt mb-4">
                 <h2>Volunteer</h2>
                 <hr>
-                <p class="small-text-GISE"> We are always looking to expand our team. If you are a GIS Specialist we would love to work with you. <a href="https://forms.gle/pLmp6C6xgN5ZHdhy8" style="text-decoration:underline;" target="_blank" >Apply to be a Volunteer</a></p>
+                <p class="small-text-GISE"> We are always looking to expand our team. If you are a GIS Specialist we would love to work with you. 
+                  <!-- <a href="https://forms.gle/pLmp6C6xgN5ZHdhy8" style="text-decoration:underline;" target="_blank" >Apply to be a Volunteer</a> -->
+                </p>
               </div>
               <div class="vln-ctn-locations">
                 <div class="embed-container"><small><a href="//africageoportal.maps.arcgis.com/apps/Embed/index.html?webmap=02921a2c73da42debb07cb800c87f82e&extent=-1.5556,3.6205,19.9776,14.4535&home=true&zoom=true&scale=true&disable_scroll=false&theme=light" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="GRMI Volunteer Locations" src="//africageoportal.maps.arcgis.com/apps/Embed/index.html?webmap=02921a2c73da42debb07cb800c87f82e&extent=-1.5556,3.6205,19.9776,14.4535&home=true&zoom=true&previewImage=true&scale=true&disable_scroll=false&theme=light"></iframe></div>

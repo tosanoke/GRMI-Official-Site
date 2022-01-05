@@ -595,7 +595,7 @@ header.header_bg{
   text-align: center;
   font-family: "BrandonGrotW01-Light";
   font-size: 30px;
-  margin: 30px 0 30px 0;
+  padding: 30px 0 30px 0;
   
 }
 
@@ -611,6 +611,7 @@ header.header_bg{
   color: rgb(48,48,48, 0.9);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   font-family:"BrandonGrotW01-Light";
+  padding: 0;
   
 }
 
@@ -817,8 +818,21 @@ small {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  margin: 0 auto;
+  justify-items: center;
+  padding-bottom: 50px;
+}
+
+.events-container img{
+  width: 100%;
 }
 
 .mpt-text{
@@ -830,6 +844,16 @@ small {
 
 }
 
+.vid-events{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.mpt-img{
+  padding: 10px 0;
+  align-self: center;
+}
 
 /* MEDIA QUERY */
 @media screen and (min-width: 1201px){
@@ -852,6 +876,8 @@ small {
       width: 70%;
       margin: auto;
     } 
+
+    
 
     .mpt-img, 
     .mpt-text {
@@ -929,10 +955,26 @@ small {
 .webMap div>a {
   font-size: 0.8rem;
 }
+.mpt-text{
+  display: none;
+}
+
+.mapathon-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
   
 }
 
+.events-container{
+  grid-column: 1/-1;
+  width: 70%;
+}
 
+}
 
 
 

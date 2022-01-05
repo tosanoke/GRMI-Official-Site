@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   /* when clicking a thumbnail */
   $(".row .view-map").click(function(){
-   var content = $(".carousel-inner");
+   var content = $(".carousel-inner-for-script");
    var title = $(".modal-title");
  
    content.empty();  

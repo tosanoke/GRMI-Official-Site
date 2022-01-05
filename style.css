@@ -19,7 +19,7 @@
   padding: 0;
 }
 
-
+/* carousel 1 */
 
 .carousel-inner > .item {
   display: none;
@@ -79,3 +79,6 @@
   width: 30px;
   height: 48px;
 }
+
+/* carousel 2 */
+
