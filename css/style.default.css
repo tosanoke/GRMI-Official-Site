@@ -339,6 +339,8 @@ header.header_bg{
 
 }
 
+
+
 /* about section */
 .bg-color-grey{
   background-color: rgb(242, 240, 240);
@@ -861,6 +863,8 @@ small {
   .our-team .pic {
     height: 400px;
     }
+
+    
 }
 
 @media screen and (max-width: 992px)  {
@@ -909,7 +913,7 @@ small {
         font-size: 1rem;
       }
 
-
+      
 }
 
 
@@ -974,6 +978,12 @@ small {
   grid-column: 1/-1;
   width: 70%;
 }
+
+.spacing {
+  display: grid;
+  gap: 8px;
+}
+
 
 }
 
@@ -1661,7 +1671,7 @@ STYLE SWITCHER FOR DEMO
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
+  color: #34e2a7;
   background-color: transparent;
   background-image: none;
   border-color: #f8f9fa;
@@ -2765,6 +2775,9 @@ code {
     margin-right: 15px;
     margin-left: 15px;
   }
+ 
+  
+  
 }
 
 /*
